@@ -31,7 +31,7 @@ Successfully deleted a registered user account and verified the response.
 
 Tested the product search functionality by keyword and validated response structure.
 
-**🛠 Tools Used**
+** Tools Used**
 
 **Postman** – For designing and running API tests
 
@@ -39,7 +39,7 @@ Tested the product search functionality by keyword and validated response struct
 
 **Chai Assertion Library** – Built into Postman for expressive tests
 
-**📁 Repository Contents**
+**Repository Contents**
 
 **Postman_collection.json** – Exported Postman collection with all requests and test scripts
 
@@ -47,7 +47,7 @@ Tested the product search functionality by keyword and validated response struct
 
 **Screenshots (optional)** – To demonstrate test results (can be added to a /screenshots folder)
 
-**🚀 How to Run the Tests**
+**How to Run the Tests**
 1. Open Postman
 2. Import the postman_collection.json file
 3. Set up required environment variables if needed
