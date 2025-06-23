@@ -31,6 +31,11 @@ Successfully deleted a registered user account and verified the response.
 
 Tested the product search functionality by keyword and validated response structure.
 
+**8. Get All Products**
+
+Tested the API endpoint to retrieve a complete list of all available products. Verified that the response contains a 200 status code and a properly structured JSON array with product details like ID, name, price, brand, and category
+
+
 **Tools Used:**
 
 **Postman** – For designing and running API tests
