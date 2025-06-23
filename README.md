@@ -44,13 +44,14 @@ Tested the API endpoint to retrieve a complete list of all available products. V
 
 **Chai Assertion Library** – Built into Postman for expressive tests
 
-**Repository Contents**
 
-**Postman_collection.json** – Exported Postman collection with all requests and test scripts
+**Repository Contents:**
+
+
+**Tests cases** – Exported Postman collection with all requests and test scripts
 
 **README.md** – Documentation of test cases and setup
 
-**Screenshots (optional)** – To demonstrate test results (can be added to a /screenshots folder)
 
 **How to Run the Tests**
 1. Open Postman
