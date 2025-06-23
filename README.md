@@ -31,7 +31,7 @@ Successfully deleted a registered user account and verified the response.
 
 Tested the product search functionality by keyword and validated response structure.
 
-** Tools Used**
+**Tools Used:**
 
 **Postman** – For designing and running API tests
 
