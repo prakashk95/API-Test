@@ -1,0 +1,8 @@
+***Test Cases:***
+pm.test('Response code is 200', function(){
+    pm.response.to.have.status(200);
+})
+pm.test('Response body contains "User exists!"', function () {
+    pm.expect(pm.response.text()).to.include('User exists!');})
+
+***Request Params:*** email and password
