@@ -1,0 +1,9 @@
+Test Cases:
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200)
+});
+pm.test("Account found", function(){
+    pm.expect(pm.response.json().message).to.not.equal("Account not found with this email, try another email!")
+})
+
+Request Parameters: email
