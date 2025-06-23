@@ -1,4 +1,4 @@
-***Test Cases:***
+<b>Test Cases:</b>
 pm.test('Response code is 200', function(){
     pm.response.to.have.status(200);
 })
