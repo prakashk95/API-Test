@@ -1,0 +1,9 @@
+Test case:
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test('product found',function(){
+    pm.expect(pm.response.json().products).to.not.be.empty;
+})
+
+Request Params= search_product and (Any product name eg top, dress etc).
