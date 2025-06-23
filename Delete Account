@@ -1,0 +1,9 @@
+Test Case:
+pm.test('response is 200', function(){
+    pm.response.to.have.status(200);
+})
+pm.test('Account is deleted', function(){
+    pm.expect(pm.response.json().message).to.eql('Account deleted!')
+})
+
+Requested Params: email and password.
