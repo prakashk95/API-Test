@@ -1,0 +1,37 @@
+Test Case:
+pm.test("status code is 200", function() {
+    pm.response.to.have.status(200);
+});
+
+pm.test("response is not empty", function() {
+    pm.expect(pm.response.json()).to.not.be.empty;
+});
+
+pm.test("response time is below 1500ms", function() {
+    pm.expect(pm.response.responseTime).to.be.below(1500);
+});
+
+pm.test("All products have required keys", function () {
+    const products = pm.response.json().products;
+
+    const requiredKeys = ['id', 'name', 'price', 'brand', 'category'];
+    const categoryKeys = ['usertype', 'category'];
+    const usertypeKeys = ['usertype'];
+
+    const allValid = products.every(p =>
+        requiredKeys.every(k => p.hasOwnProperty(k)) &&
+        categoryKeys.every(k => p.category.hasOwnProperty(k)) &&
+        usertypeKeys.every(k => p.category.usertype.hasOwnProperty(k))
+    );
+
+    pm.expect(allValid).to.be.true;
+});
+
+pm.test("Price is not below 100", function () {
+    const products = pm.response.json().products;
+    const allValid = products.every(p => {
+        const priceValue = parseInt(p.price.replace('Rs. ', ''));
+        return priceValue >= 100;
+    });
+    pm.expect(allValid).to.be.true;
+});
